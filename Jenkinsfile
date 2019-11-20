@@ -18,7 +18,7 @@ node {
 
   // 4. Add Job Junit reporting inside Jenkins  
   stage("Report tests") {
-      allure results: [[path: 'target/surefire-reports']]
+      //allure results: [[path: 'target/surefire-reports']]
       junit allowEmptyResults: true, testResults: '**/TEST-*.xml'
   }
 
